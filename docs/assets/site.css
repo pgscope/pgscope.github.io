@@ -1,0 +1,159 @@
+:root {
+    --main-font-color: #ffffff;
+    --header-background-color: #3498db;
+    --hero-background-color: #2980b9;
+    --main-background-color: #2475b4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: var(--header-background-color);
+    color: var(--main-font-color);
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--main-font-color);
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--main-font-color);
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 400px;
+    background: var(--hero-background-color);
+    text-align: center;
+    color: var(--main-font-color);
+}
+
+.hero h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--main-font-color);
+    /* Green success background */
+    background: #27ae60;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #c0392b;
+}
+
+.boxes {
+    padding-top: 20px;
+    /* Slightly darker blue */
+    background: var(--main-background-color);
+    /* color: var(--main-font-color); */
+}
+
+.box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.boxes::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.faqs {
+    color: var(--main-font-color);
+    padding: 20px;
+}
+
+footer {
+    padding: 40px;
+    /* color: var(--main-font-color); */
+    background: var(--main-background-color);
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #27ae60;
+    font-size: 20px;
+    color: var(--main-font-color);
+}

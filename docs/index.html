@@ -5,130 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PgScope - Understand Your Postgres Schema and Run Correct Queries</title>
-	<style>
-		/* CSS styles */
-		body {
-			font-family: Arial, sans-serif;
-			line-height: 1.6;
-			margin: 0;
-			padding: 0;
-			background-color: #f4f4f4;
-			color: #333;
-		}
-
-		.container {
-			width: 80%;
-			margin: auto;
-			overflow: hidden;
-		}
-
-		header {
-			background: #3498db;
-			color: #ffffff;
-			padding-top: 30px;
-			min-height: 70px;
-		}
-
-		header a {
-			color: #ffffff;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 16px;
-		}
-
-		header ul {
-			padding: 0;
-			margin: 0;
-			list-style: none;
-			overflow: hidden;
-		}
-
-		header li {
-			float: left;
-			display: inline;
-			padding: 0 20px 0 20px;
-		}
-
-		header #branding {
-			float: left;
-		}
-
-		header #branding h1 {
-			margin: 0;
-		}
-
-		header nav {
-			float: right;
-			margin-top: 10px;
-		}
-
-		header .highlight,
-		header .current a {
-			color: #e74c3c;
-			font-weight: bold;
-		}
-
-		header a:hover {
-			color: #ffffff;
-			font-weight: bold;
-		}
-
-		.hero {
-			min-height: 400px;
-			background: #2980b9;
-			text-align: center;
-			color: #ffffff;
-		}
-
-		.hero h1 {
-			margin-top: 100px;
-			font-size: 55px;
-			margin-bottom: 10px;
-		}
-
-		.hero p {
-			font-size: 20px;
-			margin-bottom: 20px;
-		}
-
-		.button {
-			display: inline-block;
-			font-size: 20px;
-			color: #ffffff;
-			/* Green success background */
-			background: #27ae60;
-			padding: 10px 20px;
-			border: none;
-			cursor: pointer;
-			text-decoration: none;
-			border-radius: 5px;
-		}
-
-		.button:hover {
-			background: #c0392b;
-		}
-
-		.boxes {
-			padding-top: 20px;
-			/* Slightly darker blue */
-			background: #2475b4;
-			color: #ffffff;
-		}
-
-		.box {
-			float: left;
-			width: 30%;
-			padding: 10px;
-			text-align: center;
-		}
-
-		footer {
-			padding: 40px;
-			color: #ffffff;
-			background: #2475b4;
-			text-align: center;
-		}
-	</style>
+	<link rel="stylesheet" href="assets/site.css">
 </head>
 
 <body>
@@ -139,7 +16,8 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="/faq.html">Frequenty Asked Questions</a></li>
+					<li><a href="faq.html">FAQs</a></li>
+					<li><a href="pricing.html">Pricing</a></li>
 					<li><a href="https://blog.pgscope.com">Blog</a></li>
 					<li><a href="https://app.pgscope.com">Sign In</a></li>
 					<li><a href="https://app.pgscope.com">Create Account</a></li>
@@ -152,7 +30,7 @@
 		<div class="container">
 			<h1>Understand Your Postgres Schema</h1>
 			<p>PgScope helps you quickly grasp your database structure and then easily make and save queries.</p>
-			<a href="#signup" class="button">Get Started</a>
+			<a href="https://app.pgscope.com" class="button">Get Started</a>
 		</div>
 	</section>
 
@@ -175,6 +53,18 @@
 	<footer>
 		<p>&copy; 2024 PgScope. All rights reserved.</p>
 	</footer>
+	<section class="faqs">
+		<div class="container">
+			<h2 id="faq">FAQs</h2>
+			<h3>What is PgScope?</h3>
+			<p>PgScope is a tool to make it it nicer to use postgres databases.</p>
+			<h3>How do I get started?</h3>
+			<p>Simply create an account and start using PgScope. It's that easy!</p>
+			<h3>How much does it cost?</h3>
+			<p>It's free for personal cloud use and $2 per user for team cloud use. On-premise enterprise use is $6k per
+				year regardless of the number of users.</p>
+		</div>
+	</section>
 
 </body>
 
