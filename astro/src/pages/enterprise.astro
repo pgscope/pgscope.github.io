@@ -7,9 +7,10 @@ import PgLayout from "../layouts/PgLayout.astro";
     Request a meeting about full service on premise hosting for $1,000 per
     month.
   </h1>
-  <form action="https://app.pgscope.com/enterprise-request" method="post">
-    <input type="text" placeholder="Your email" />
-    <input type="text" placeholder="Phone Number" />
+  <form action="http://127.0.0.1:3333/enterprise-request" method="post">
+    <input type="text" name="email" placeholder="Your email" required />
+    <input type="text" name="phone" placeholder="Phone Number" required />
+    <input type="text" name="message" placeholder="Comments" />
     <button type="submit">Contact Us</button>
   </form>
 </PgLayout>
